@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background: linear-gradient(#bd09b7 0%,#6b4cf5 100%);
+    box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+    display: grid;
+
+}
+
+form div{
+    margin: 20px 0;
+}
+
+/*selctors*/
+form :not(button,input,select,option){
+    color: white;
+}
+
+form :is(#email,#password,select){
+    padding: 7px;
+    width: 100%;
+}
+
+form button {
+    padding: 5px 15px;
+    justify-self: end; /*display grid*/
+}
+
+@media screen and (min-width: 500px) {
+    form {
+        width: 300px;
+    }    
+}
